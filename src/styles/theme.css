@@ -1,0 +1,42 @@
+/* ============================================================
+   THEME FILE: change the look of the whole website here.
+   Edit the values below (colors, fonts, spacing) and every
+   page updates automatically.
+   ============================================================ */
+
+:root {
+  /* Brand colors */
+  --color-primary: #c62828;        /* medical red */
+  --color-primary-dark: #8e0000;
+  --color-secondary: #0d47a1;      /* trust blue */
+  --color-accent: #ffb300;         /* relief amber */
+
+  /* Neutrals */
+  --color-text: #1f2933;
+  --color-muted: #5f6c7b;
+  --color-bg: #ffffff;
+  --color-bg-alt: #f5f7fa;
+  --color-border: #e1e6ec;
+
+  /* Typography */
+  --font-body: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+  --font-heading: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+
+  /* Spacing & shape */
+  --radius: 14px;
+  --shadow: 0 6px 20px rgba(20, 30, 50, 0.08);
+  --max-width: 1100px;
+}
+
+/* Base reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: 1.65;
+}
+img { max-width: 100%; display: block; }
+a { color: var(--color-secondary); }
+h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; }

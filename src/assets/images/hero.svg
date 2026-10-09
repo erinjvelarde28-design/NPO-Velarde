@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img">
+  <rect width="480" height="360" rx="24" fill="#e8f0fb"/>
+  <circle cx="380" cy="80" r="46" fill="#ffd54f"/>
+  <path d="M0 270 Q120 220 240 262 T480 240 V360 H0Z" fill="#c8dcf5"/>
+  <path d="M0 300 Q140 262 260 292 T480 280 V360 H0Z" fill="#a9c8ee"/>
+  <!-- ambulance-style van -->
+  <rect x="90" y="190" width="210" height="84" rx="10" fill="#fff"/>
+  <rect x="250" y="206" width="70" height="68" rx="10" fill="#fff"/>
+  <rect x="262" y="214" width="40" height="26" rx="4" fill="#bcd7f7"/>
+  <rect x="90" y="236" width="230" height="14" fill="#c62828"/>
+  <rect x="164" y="204" width="14" height="40" rx="3" fill="#c62828"/>
+  <rect x="151" y="217" width="40" height="14" rx="3" fill="#c62828"/>
+  <circle cx="140" cy="278" r="20" fill="#263238"/><circle cx="140" cy="278" r="8" fill="#cfd8dc"/>
+  <circle cx="276" cy="278" r="20" fill="#263238"/><circle cx="276" cy="278" r="8" fill="#cfd8dc"/>
+  <rect x="180" y="180" width="26" height="10" rx="4" fill="#0d47a1"/>
+  <!-- people -->
+  <circle cx="370" cy="226" r="14" fill="#8d5a3b"/><rect x="356" y="242" width="28" height="42" rx="10" fill="#0d47a1"/>
+  <circle cx="410" cy="232" r="12" fill="#f1c9a0"/><rect x="398" y="246" width="24" height="38" rx="9" fill="#c62828"/>
+  <!-- heart -->
+  <path d="M60 110c-14-12-26-22-26-36a14 14 0 0 1 26-6 14 14 0 0 1 26 6c0 14-12 24-26 36z" fill="#c62828"/>
+</svg>
