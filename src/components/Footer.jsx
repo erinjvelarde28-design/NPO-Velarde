@@ -13,6 +13,7 @@ export default function Footer() {
           <h4>Pages</h4>
           <p><Link to="/">Home</Link></p>
           <p><Link to="/about">About</Link></p>
+          <p><Link to="/donate">Donate</Link></p>
         </div>
         <div>
           <h4>Contact</h4>

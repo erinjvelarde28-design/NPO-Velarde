@@ -109,3 +109,35 @@
   .cards, .cards--four { grid-template-columns: 1fr; }
   .hero h1 { font-size: 2rem; }
 }
+
+/* ---------- Donate page (Stripe) ---------- */
+.donate { max-width: 560px; }
+.donate--center { text-align: center; }
+.donate__card {
+  background: #fff; border: 1px solid var(--color-border);
+  border-radius: var(--radius); box-shadow: var(--shadow); padding: 28px;
+}
+.donate__heading { font-size: 1.2rem; margin-bottom: 16px; }
+.donate__amounts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 20px; }
+.donate__amount {
+  padding: 12px 6px; font: inherit; font-weight: 600; cursor: pointer;
+  background: #fff; color: var(--color-text);
+  border: 2px solid var(--color-border); border-radius: 10px;
+}
+.donate__amount:hover { border-color: var(--color-primary); }
+.donate__amount.is-selected { border-color: var(--color-primary); background: #fdecea; color: var(--color-primary-dark); }
+.donate__label { display: block; font-size: 0.9rem; color: var(--color-muted); margin-bottom: 6px; }
+.donate__custom {
+  display: flex; align-items: center; gap: 8px; margin-bottom: 20px;
+  border: 2px solid var(--color-border); border-radius: 10px; padding: 0 12px;
+}
+.donate__custom:focus-within { border-color: var(--color-primary); }
+.donate__custom input { flex: 1; border: 0; outline: 0; padding: 12px 0; font: inherit; background: transparent; }
+.donate__summary { margin-bottom: 16px; }
+.card .btn { margin-top: 14px; }
+.donate__submit { width: 100%; text-align: center; margin-top: 20px; cursor: pointer; border: 0; font: inherit; font-weight: 600; }
+.donate__submit:disabled { opacity: 0.6; cursor: not-allowed; }
+.donate__back { display: block; margin: 14px auto 0; background: none; border: 0; color: var(--color-secondary); font: inherit; cursor: pointer; }
+.donate__error { color: var(--color-primary-dark); background: #fdecea; border-radius: 8px; padding: 10px 12px; margin-top: 14px; font-size: 0.95rem; }
+.donate__note { text-align: center; color: var(--color-muted); font-size: 0.85rem; margin-top: 12px; }
+@media (max-width: 480px) { .donate__amounts { grid-template-columns: 1fr 1fr; } }

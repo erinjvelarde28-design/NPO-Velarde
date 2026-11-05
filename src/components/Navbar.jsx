@@ -7,6 +7,7 @@ import logo from "../assets/images/logo.svg";
 const links = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About" },
+  { to: "/donate", label: "Donate" },
 ];
 
 export default function Navbar() {

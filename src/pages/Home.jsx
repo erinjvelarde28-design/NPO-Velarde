@@ -20,6 +20,7 @@ export default function Home() {
             <p>{siteInfo.mission}</p>
             <div className="hero__actions">
               <a href="#help" className="btn btn--primary">Get involved</a>
+              <Link to="/donate" className="btn btn--primary">Donate</Link>
               <Link to="/about" className="btn btn--ghost">Learn about us</Link>
             </div>
           </div>
@@ -67,6 +68,7 @@ export default function Home() {
               <article key={w.title} className="card card--simple">
                 <h3>{w.title}</h3>
                 <p>{w.text}</p>
+                {w.to && <Link to={w.to} className="btn btn--primary">Donate now</Link>}
               </article>
             ))}
           </div>

@@ -40,10 +40,18 @@ export const siteInfo = {
 
   // ---------- Home page: ways to help ----------
   waysToHelp: [
-    { title: "Donate", text: "Every contribution funds medicine, relief packs, and transport." },
+    { title: "Donate", text: "Every contribution funds medicine, relief packs, and transport.", to: "/donate" },
     { title: "Volunteer", text: "Join a medical mission or relief operation near you." },
     { title: "Partner", text: "Schools, clinics, and businesses can team up with us." },
   ],
+
+  // ---------- Donate page (Stripe) ----------
+  // The server (server/index.js) enforces its own min/max, so keep minAmount in sync with it.
+  donate: {
+    currencySymbol: "₱",
+    presetAmounts: [500, 1000, 2500, 5000],
+    minAmount: 100,
+  },
 
   // ---------- About page: about YOU ----------
   about: {

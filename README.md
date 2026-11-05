@@ -4,6 +4,16 @@ A 2-page non-profit website (Home + About) about **Medical Assistance & Disaster
 
 ---
 
+## 0) Stripe donations (NEW)
+
+The site now has a **/donate** page that takes payments with Stripe using `@stripe/react-stripe-js`
+(`<Elements>` + `<PaymentElement>`). It needs a small server, so `npm run dev` now starts both.
+
+Quick start: `npm install`, copy `.env.example` to `.env`, paste your Stripe **test** keys, then `npm run dev`.
+Full walkthrough and troubleshooting: see **SETUP-GUIDE.md**. Test card: `4242 4242 4242 4242`.
+
+---
+
 ## 1) Run it
 
 You need [Node.js](https://nodejs.org) (version 18 or newer) installed.
@@ -24,6 +34,9 @@ To make a production build: `npm run build` (output goes to the `dist/` folder).
 
 ```
 carereach/
+├── SETUP-GUIDE.md              <- how to run the Stripe donation feature
+├── .env.example                <- copy to .env and add Stripe keys
+├── server/index.js             <- donation API (Express + Stripe)
 ├── index.html                  <- page title, description, favicon
 ├── package.json
 ├── vite.config.js
@@ -32,12 +45,15 @@ carereach/
     ├── App.jsx                 <- the list of pages (routes)
     ├── data/
     │   └── siteInfo.js         <- ALL your text and numbers  (EDIT FIRST)
+    ├── lib/stripe.js           <- loads Stripe.js with your publishable key
     ├── components/
     │   ├── Navbar.jsx          <- top navigation menu
     │   └── Footer.jsx          <- bottom of every page
     ├── pages/
     │   ├── Home.jsx            <- Page 1: Home
-    │   └── About.jsx           <- Page 2: About
+    │   ├── About.jsx           <- Page 2: About
+    │   ├── Donate.jsx          <- Page 3: Donate (Stripe Elements)
+    │   └── DonateComplete.jsx  <- Payment result page
     ├── styles/
     │   ├── theme.css           <- colors, fonts, spacing  (THEME)
     │   └── app.css             <- layout and component styles
