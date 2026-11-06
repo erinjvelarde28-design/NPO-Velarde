@@ -1,6 +1,8 @@
 //  This is where I'll edit
 //  All the text stuff iz in
 
+import about from "./about.json";
+
 export const siteInfo = {
   // ---------- Organization ----------
   name: "CareReach Foundation",
@@ -53,21 +55,6 @@ export const siteInfo = {
     minAmount: 100,
   },
 
-  // ---------- About page: about YOU ----------
-  about: {
-    personName: "Erin Justine M. Velarde",
-    story: [
-      "I started CareReach Foundation after seeing how quickly health systems collapse in a crisis. Families are left without urgent care. Knowing that fast medical aid saves lives, I created this non-profit to bring critical emergency relief directly to vulnerable communities.",
-      "CareReach started with a simple commitment to step in during crises when local resources fail. Today, we coordinate fast-response teams to deliver medical aid, clean water kits, and essential supplies to affected communities within the first 72 hours of a disaster."
-    ],
-    vision:
-      "A country where no one is left without medical care or help in the middle of a disaster.",
-    values: [
-      { title: "Compassion", text: "We treat every person with dignity and respect." },
-      { title: "Speed", text: "In an emergency, hours matter. We move fast." },
-      { title: "Transparency", text: "We show donors exactly where every peso goes." },
-      { title: "Teamwork", text: "We work alongside local leaders, not over them." },
-    ],
-
-  },
+  // ---------- About page: edit src/data/about.json ----------
+  about,
 };
